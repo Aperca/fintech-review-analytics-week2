@@ -22,8 +22,8 @@ DATA_PATHS = {
 # Database configuration
 DATABASE_CONFIG = {
     'dbname': 'bank_reviews',
-    'user': 'postgres',  # Change if you use different user
-    'password': 'password',  # CHANGE THIS to your PostgreSQL password
+    'user': 'liluebuy',  
+    'password': '', 
     'host': 'localhost',
     'port': '5432'
 }
@@ -32,8 +32,8 @@ DATABASE_CONFIG = {
 import os
 DATABASE_CONFIG = {
     'dbname': os.getenv('DB_NAME', 'bank_reviews'),
-    'user': os.getenv('DB_USER', 'postgres'),
-    'password': os.getenv('DB_PASSWORD', 'password'),
+    'user': os.getenv('DB_USER', 'liluebuy'),
+    'password': os.getenv('DB_PASSWORD', ''),
     'host': os.getenv('DB_HOST', 'localhost'),
     'port': os.getenv('DB_PORT', '5432')
 }
