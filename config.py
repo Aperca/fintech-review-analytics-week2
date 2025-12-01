@@ -18,3 +18,22 @@ DATA_PATHS = {
     'raw_data': 'data/raw/bank_reviews_raw.csv',
     'cleaned_data': 'data/processed/bank_reviews_cleaned.csv'
 }
+
+# Database configuration
+DATABASE_CONFIG = {
+    'dbname': 'bank_reviews',
+    'user': 'postgres',  # Change if you use different user
+    'password': 'password',  # CHANGE THIS to your PostgreSQL password
+    'host': 'localhost',
+    'port': '5432'
+}
+
+# Alternative: Use environment variables for security
+import os
+DATABASE_CONFIG = {
+    'dbname': os.getenv('DB_NAME', 'bank_reviews'),
+    'user': os.getenv('DB_USER', 'postgres'),
+    'password': os.getenv('DB_PASSWORD', 'password'),
+    'host': os.getenv('DB_HOST', 'localhost'),
+    'port': os.getenv('DB_PORT', '5432')
+}

@@ -33,3 +33,17 @@ python scripts/data_preprocessing.py
 
 # Check data quality
 python scripts/data_check.py
+
+# Create database directory
+mkdir -p database
+
+# Create README for database setup
+cat > database/README.md << 'EOF'
+# Database Setup Guide
+
+## PostgreSQL Installation
+
+### macOS (using Homebrew):
+```bash
+brew install postgresql
+brew services start postgresql

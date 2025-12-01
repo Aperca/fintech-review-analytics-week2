@@ -7,3 +7,5 @@ scikit-learn>=1.2.0
 matplotlib>=3.7.0
 seaborn>=0.12.0
 transformers>=4.30.0
+psycopg2-binary>=2.9.0
+sqlalchemy>=2.0.0
